@@ -1,0 +1,358 @@
+/* Responsive Design machen!!! */
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('images/romopoly-board.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    cursor: url('images/cursor.png'), auto !important;
+    overflow-x: hidden;
+}
+
+a {
+    cursor: url('images/cursor-button.png'), auto !important;
+}
+
+.answer {
+    cursor: url('images/cursor-button.png'), auto !important;
+    pointer-events: auto;
+}
+
+/* Spielcontainer */
+.game-container {
+    width: 900px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Halbtransparent für Sicht auf den Hintergrund */
+    border: 10px solid #e74c3c; /* Monopoly-Rot */
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Tiefere Schatten für stärkeren 3D-Effekt */
+    position: relative;       /* Verhindert Positionierungsprobleme */
+    z-index: 1;               /* Überlagert das Overlay */
+}
+
+/* Header */
+.header h1 {
+    color: #ff4d4d; /* Kräftiges Rot */
+    font-size: 3.5em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Kräftiger Schatten */
+    margin-bottom: 30px;
+}
+
+/* Frage Box */
+.question-box {
+    background-color: #27ae60; /* Kräftiges Grün */
+    padding: 25px;
+    border-radius: 15px;
+    border: 6px solid #2ecc71; /* Hellere grüne Umrandung */
+    margin-bottom: 40px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Schatten */
+}
+
+#question {
+    font-size: 2em;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Weißer Text mit Schatten */
+}
+
+/* Antworten Buttons */
+.answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.answer {
+    background-color: #3498db; /* Blaues Monopoly-Feld */
+    border: 5px solid #2980b9; /* Dunklerer Rand */
+    color: white;
+    padding: 25px;
+    font-size: 1.8em; /* Größere Schriftgröße */
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* 3D-Schattierung */
+    min-width: 250px;
+}
+
+.answer:hover {
+    background-color: #2980b9; /* Dunkelblauer Hover-Effekt */
+    transform: scale(1.1); /* Vergrößerung bei Hover */
+}
+
+/* Lifeline Buttons */
+.lifelines {
+    margin-top: 40px;
+}
+
+.lifeline {
+    background-color: #f1c40f; /* Gelbes Monopoly-Feld */
+    border: 5px solid #f39c12; /* Dunkelgelber Rand */
+    color: white;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Schattierung */
+    min-width: 300px;
+}
+
+.lifeline:hover {
+    background-color: #f39c12;
+    transform: scale(1.05); /* Vergrößerung */
+}
+
+.lifeline:disabled {
+    background-color: #bdc3c7; /* Deaktiviert */
+    cursor: not-allowed;
+}
+
+/* Made By */
+.made-by {
+    position: fixed;
+    bottom: 10px; /* Abstand vom unteren Rand */
+    right: 10px;  /* Abstand vom rechten Rand */
+    background-color: rgba(0, 0, 0, 0.7); /* Dunkler Hintergrund mit Transparenz */
+    color: white; /* Textfarbe weiß */
+    padding: 10px; /* Abstand innerhalb der Box */
+    border-radius: 5px; /* Abgerundete Ecken */
+    font-size: 12px; /* Kleinere Schriftgröße */
+    font-family: Arial, sans-serif; /* Schriftart */
+    z-index: 1000; /* Damit es immer über anderen Elementen bleibt */
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Animation mit 2 Sekunden Dauer */
+}
+
+/* End-Seiten Styling */
+.end-container {
+    width: 500px;
+    padding: 30px;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 5px solid #e74c3c; /* Rot für Verloren */
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.end-container h1 {
+    color: #e74c3c; /* Rot für Verloren */
+    font-size: 2.5em;
+}
+
+.retry-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #3498db; /* Blau für Button */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.5em;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.retry-button:hover {
+    background-color: #2980b9;
+}
+
+/* Progress Bar */
+#progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 20px;
+    margin: 20px 0;
+    height: 30px; /* Höhe der Progress-Bar */
+    overflow: hidden; /* Verhindert, dass der Fortschrittsbalken über die Grenzen hinausragt */
+}
+
+#progress {
+    width: 0%;
+    height: 100%; /* Höhe auf 100% setzen, um den Balken zu füllen */
+    background-color: #4caf50; /* Grün als Farbe des Fortschritts */
+    border-radius: 20px;
+    text-align: center; /* Text im Fortschrittsbalken zentrieren */
+    line-height: 30px; /* Damit der Text vertikal zentriert ist */
+    color: white;
+    font-weight: bold;
+    transition: width 0.5s ease; /* Animation für die Breitenänderung */
+}
+
+/* Pop-up Hintergrund (verdeckt den Rest der Seite) */
+.first-visit-popup {
+    display: none; /* Versteckt das Pop-up standardmäßig */
+    position: fixed;
+    z-index: 999; /* Damit es über allen anderen Elementen liegt */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Halbtransparentes Schwarz */
+    z-index: 1000;
+}
+
+/* Pop-up Inhalt */
+.first-visit-popup-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 60%; /* Maximalbreite für große Bildschirme */
+    max-height: 50%; /* Maximalhöhe für große Bildschirme */
+    overflow-y: auto; /* Scrollen, wenn der Inhalt zu groß ist */
+}
+
+.first-visit-image {
+    width: 100%; /* Macht das Bild 100% der Breite des Containers */
+    max-width: 300px; /* Maximale Breite */
+    height: auto; /* Automatische Höhe für korrekte Proportionen */
+    display: block; /* Zentrieren */
+    margin: 20px auto; /* Zentriert das Bild und fügt oben und unten Abstand hinzu */
+    border-radius: 10px; /* Optional: Ecken abrunden */
+}
+
+.game-instructions {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.game-instructions h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.game-instructions h3 {
+    color: #2980b9;
+    margin-top: 20px;
+}
+
+.game-instructions p, .game-instructions li {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.game-instructions ol, .game-instructions ul {
+    margin-left: 20px;
+}
+
+.game-instructions li {
+    margin-bottom: 15px;
+}
+
+.game-instructions strong {
+    color: #e74c3c;
+}
+
+
+/* Schließen-Button (X) */
+.first-visit-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Animationen */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Media Queries */
+
+/* Smartphones (weniger als 768px) */
+@media (max-width: 100vh) {
+    body {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .game-container {
+        width: 100%;
+        height: auto;
+        top: 15%;
+        box-sizing: border-box; /* Verhindert Overflow */
+        border: 5px solid #e74c3c; /* Roter Rand, sichtbar auf Smartphones */
+        overflow-x: hidden; /* Verhindert horizontales Scrollen */
+    }
+
+
+    .answers {
+        grid-template-columns: 1fr; /* Eine Spalte auf mobilen Geräten */
+        gap: 15px; /* Reduziert den Abstand zwischen den Buttons */
+    }
+    
+    .answer {
+        min-width: auto; /* Entfernt die minimale Breite für mobile Ansicht */
+        width: 100%; /* Macht die Buttons volle Breite */
+        padding: 15px; /* Reduziert das Padding für kleinere Bildschirme */
+        font-size: 1.2em; /* Kleinere Schriftgröße für mobile Geräte */
+    }
+
+
+    .made-by {
+        font-size: 12px;
+        padding: 10px;
+        text-align: right;
+        overflow: hidden;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .popup-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .popup-btn {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+
+    .close-btn {
+        font-size: 1.2em;
+    }
+
+    .first-visit-popup-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .first-visit-close-btn {
+        font-size: 1.2em;
+    }
+
+    .game-instructions {
+        padding: 15px;
+        font-size: 1em;
+    }
+
+    .game-instructions h2 {
+        font-size: 1.5em;
+    }
+
+    .game-instructions h3 {
+        font-size: 1.2em;
+    }
+}

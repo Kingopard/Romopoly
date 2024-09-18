@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romopoly - Das Latein-Lernspiel</title>
+    <link rel="icon" href="images/karologo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Romopoly</h1>
+        </div>
+        <div id="question-box" class="question-box">
+            <h2 id="question">Frage wird hier angezeigt...</h2>
+        </div>
+        <div class="answers">
+            <button class="answer" id="answer1">Antwort 1</button>
+            <button class="answer" id="answer2">Antwort 2</button>
+            <button class="answer" id="answer3">Antwort 3</button>
+            <button class="answer" id="answer4">Antwort 4</button>
+        </div>
+        <div class="lifelines">
+            <button id="fifty-fifty" class="lifeline">50:50 Joker</button>
+            <button id="reset-questions" class="lifeline">Fragen zurücksetzen</button>
+        </div>
+        <div class="extra-buttons">
+            <button id="made-by-button" class="made-by">Made by Leopold</button>
+        </div>
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <!-- Pop-up für den ersten Besuch -->
+        <div id="first-visit-popup" class="first-visit-popup">
+            <div class="first-visit-popup-content">
+                <span id="close-first-visit-popup" class="first-visit-close-btn">&times;</span>
+                <div class="game-instructions">
+                    <h2>Romopoly: Spielanleitung</h2>
+                    
+                    <p>Willkommen bei <strong>Romopoly</strong>, deinem Latein-Lernspiel, inspiriert von Monopoly und "Wer wird Millionär?". Hier sind die wichtigsten Schritte, um zu beginnen:</p>
+                    
+                    <h3>Spielablauf</h3>
+                    <ol>
+                        <li><strong>Fragen beantworten</strong>:<br>
+                            Dir werden nacheinander lateinische Fragen gestellt, die du durch Anklicken einer der vier Antwortmöglichkeiten beantworten musst. Für jede richtige Antwort steigst du eine Stufe auf.
+                        </li>
+                        <li><strong>Ziel des Spiels</strong>:<br>
+                            Beantworte 5 Fragen korrekt, um das Spiel zu gewinnen. Wenn du eine Frage falsch beantwortest, verlierst du.
+                        </li>
+                    </ol>
+                    
+                    <h3>Hilfe während des Spiels</h3>
+                    <ul>
+                        <li><strong>50/50-Joker</strong>:<br>
+                            Du kannst den 50/50-Joker verwenden, um zwei falsche Antworten zu entfernen und deine Gewinnchancen zu erhöhen. Achtung: Der Joker kann pro Spiel nur einmal verwendet werden.
+                        </li>
+                    </ul>
+                
+                    <h3>Spielende</h3>
+                    <ul>
+                        <li><strong>Gewonnen</strong>: Wenn du 5 richtige Antworten gibst, gewinnst du das Spiel und wirst mit einem kleinen Überraschungseffekt belohnt!</li>
+                        <li><strong>Verloren</strong>: Wenn du eine Frage falsch beantwortest, endet das Spiel und du wirst auf eine Verloren-Seite weitergeleitet.</li>
+                    </ul>
+                
+                    <h3>Wichtig:</h3>
+                    <p>
+                        Die Fragen werden bei jedem Spiel per Zufall ausgewählt. Du wirst keine Fragen zweimal hintereinander erhalten.
+                        Wenn alle Fragen einmal gestellt wurden, kannst du sie durch Drücken des "Fragen zurücksetzen"-Buttons zurücksetzen und von vorne beginnen.
+                    </p>
+                
+                    <p><strong>Viel Spaß beim Spielen und viel Erfolg beim Lateinlernen!</strong></p>
+                </div>
+                
+                <img src="images/logo-karolinen-gymnasium.png" alt="logo-karolinen-gymnasium" class="first-visit-image">
+            </div>
+        </div>
+      
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gewonnen</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="end-container">
+        <h1>Herzlichen Glückwunsch!</h1>
+        <p>Du hast das Spiel gewonnen!</p>
+        <a href="index.html" class="retry-button">Nochmal spielen</a>
+    </div>
+    <script>
+        // Konfetti-Effekte
+        function celebrate() {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        }
+
+        // Warte, bis die Seite vollständig geladen ist, und starte den Konfetti-Effekt
+        window.onload = function() {
+            celebrate();
+        };
+    </script>
+</body>
+</html>
