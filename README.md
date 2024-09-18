@@ -2,7 +2,7 @@
 
 Willkommen bei **Romopoly**, einem interaktiven Latein-Lernspiel, das von Monopoly und "Wer wird Millionär?" inspiriert ist. Verbessere dein Latein, indem du spannende Fragen beantwortest, während du durch die Spielstufen fortschreitest. 💡
 
-![Romopoly Banner](images/romopolybanner.jpg)
+![Romopoly Banner](images/romopoly-banner.jpg)
 
 ---
 
