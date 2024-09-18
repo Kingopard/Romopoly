@@ -57,5 +57,4 @@ Du kannst das Spiel direkt hier spielen: [romopoly.k4-kings.de](https://romopoly
 
 ## 🎓 Credits
 
-- Entwickelt von [Dein Name](https://github.com/dein-benutzername)
-- Dank an alle Mitwirkenden und Tester! 👏
+- Entwickelt von [Kingopard](https://github.com/Kingopard)
