@@ -13,6 +13,7 @@ Willkommen bei **Romopoly**, einem interaktiven Latein-Lernspiel, das von Monopo
 - 🎉 **Konfetti-Effekt** bei Gewinn!
 - 📱 **Responsive Design**: Spielbar auf PC, Tablet und Smartphone.
 - 👤 **First Visit Pop-up**: Zeigt beim ersten Besuch ein Tutorial-Pop-up an.
+- 🖱️ **Custom Cursor**: Custom Cursor auf der Website, der sich bei Buttons verändert.
 - 🔄 **Fragen zurücksetzen**: Es wird keine Frage doppelt angezeigt. Wenn alle aufgebraucht wurden, kann man diese wieder zurücksetzen um wieder alle zu verfügung zu haben.
 - 🔄 **Fragen zufällig mischen**: Die Fragen werden bei jedem Neustart zufällig gemischt.
 
