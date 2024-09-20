@@ -27,7 +27,7 @@ Willkommen bei **Romopoly**, einem interaktiven Latein-Lernspiel, das von Monopo
 
 ## 🌐 Website
 
-Du kannst das Spiel direkt hier spielen: [romopoly.k4-kings.de](https://romopoly.k4-kings.de)
+Du kannst das Spiel direkt hier spielen: [Romopoly](https://romopoly.madebyleopold.de)
 
 ---
 
