@@ -57,4 +57,4 @@ Du kannst das Spiel direkt hier spielen: [Romopoly](https://romopoly.madebyleopo
 
 ## 🎓 Credits
 
-- Entwickelt von [Kingopard](https://github.com/Kingopard)
+- Entwickelt von [Leopold](https://github.com/MadebyLeopold)
