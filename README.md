@@ -21,7 +21,7 @@ Willkommen bei **Romopoly**, einem interaktiven Latein-Lernspiel, das von Monopo
 
 ## 📸 Screenshots
 
-<img src="path_to_your_image/screenshot1.png" alt="Romopoly Screenshot" width="400px"> <img src="path_to_your_image/screenshot2.png" alt="Romopoly Screenshot" width="400px">
+<img src="images/Screenshot-romopoly-1.png" alt="Romopoly Screenshot" width="400px"> <img src="images/Screenshot-romopoly-2.png" alt="Romopoly Screenshot" width="400px">
 
 ---
 
