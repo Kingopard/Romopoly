@@ -185,3 +185,8 @@ document.getElementById('reset-questions').addEventListener('click', () => {
 });
 
 loadQuestion();
+
+// Made by Leopold weiterleitung
+document.getElementById("made-by-button").addEventListener("click", function() {
+    window.open("https://github.com/MadebyLeopold", "_blank"); // Öffnet die Seite in einem neuen Tab
+});

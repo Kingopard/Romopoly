@@ -127,6 +127,16 @@ a {
     animation: fadeIn 2s forwards; /* Animation mit 2 Sekunden Dauer */
 }
 
+.made-by-logo {
+    width: 20px; /* oder eine andere passende Größe */
+    height: auto; /* Verhindert Verzerrungen */
+    border-radius: 50%; /* Make the image round */
+    object-fit: cover; /* Crop the image to fit the round shape */
+    vertical-align: middle; /* Zentriert das Logo vertikal mit dem Text */
+    margin-left: 5px; /* Abstand zwischen Button und Logo */
+}
+
+
 /* End-Seiten Styling */
 .end-container {
     width: 500px;
@@ -206,7 +216,7 @@ a {
     border-radius: 10px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     width: 80%;
-    max-width: 60%; /* Maximalbreite für große Bildschirme */
+    max-width: 45%; /* Maximalbreite für große Bildschirme */
     max-height: 50%; /* Maximalhöhe für große Bildschirme */
     overflow-y: auto; /* Scrollen, wenn der Inhalt zu groß ist */
 }
