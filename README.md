@@ -52,6 +52,7 @@ Du kannst das Spiel direkt hier spielen: [Romopoly](https://romopoly.madebyleopo
 
 - [ ] Weitere Fragen hinzufügen
 - [ ] Verschiedene Schwierigkeiten/Lektionen
+- [ ] Pop-Up Anpassung für Handys
 
 ---
 

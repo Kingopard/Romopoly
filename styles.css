@@ -1,5 +1,3 @@
-/* Responsive Design machen!!! */
-
 /* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
@@ -328,20 +326,6 @@ a {
         max-width: 100%;
         height: auto;
         overflow: hidden;
-    }
-
-    .popup-content {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .popup-btn {
-        font-size: 1em;
-        padding: 8px 15px;
-    }
-
-    .close-btn {
-        font-size: 1.2em;
     }
 
     .first-visit-popup-content {
